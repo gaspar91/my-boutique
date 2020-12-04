@@ -1,19 +1,16 @@
-html{
+html {
     height: 100%;
-    /* allows our h100 classes in vertical centering to work.*/
 }
 
 body {
     background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
-    /* ensures that it stays put in the center of the page */
     height: calc(100vh - 164px);
-    /* the eventual height of our top header */
     color: #555;
     font-family: 'Lato';
 }
 
-/* from Bulma a CSS framework similar to Bootstrap */
+/* from Bulma */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -57,6 +54,10 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.bg-black {
+    background: #000 !important;
 }
 
 /* -------------------------------- Media Queries */
