@@ -1,5 +1,10 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item d-block d-md-none">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+                Home
+            </a>
+        </li>
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
@@ -11,8 +16,6 @@
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
-
-        <!-- Menu for Clothing-->
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -26,10 +29,6 @@
             </div>
         </li>
 
-        <!-- End Menu for Clothing-->
-
-        <!-- Menu for Homeware-->
-
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Homeware
@@ -37,13 +36,9 @@
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
                 <a href="{% url 'products' %}?category=bed_bath" class="dropdown-item">Bed &amp; Bath</a>
                 <a href="{% url 'products' %}?category=kitchen_dining" class="dropdown-item">Kitchen &amp; Dining</a>
-                <a href="{% url 'products' %}?category=bed_bath,kitchen_dinning" class="dropdown-item">All Homeware</a>
+                <a href="{% url 'products' %}?category=bed_bath,kitchen_dining" class="dropdown-item">All Homeware</a>
             </div>
         </li>
-
-        <!-- End Menu for Homeware-->
-
-        <!-- Menu for Special Offers-->
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -56,7 +51,5 @@
                 <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
-
-        <!-- End Menu for Special Offers-->
     </ul>
 </div>
